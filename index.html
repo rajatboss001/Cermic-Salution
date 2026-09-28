@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramic Solutions</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <style type="text/tailwindcss">
+        @theme {
+        --color-red: #FF0000;
+        --color-blue: #1B32A5;
+        --color-light-pink: #FFEBEB;
+        --color-deep-red: #B40001;
+        --color-gray: #81848A;
+        --color-dark-surface: #1B2228;
+        --color-dark: #141414;
+        --color-rich-black: #010101;
+
+        --leading-100: 100%;
+        --leading-125: 125%;
+        --leading-127: 127%;
+        --leading-128: 128%;
+        --leading-145: 145%;
+        --leading-150: 150%;
+        --leading-158: 158%;
+        --leading-159: 159%;
+        --leading-160: 160%;
+        --leading-162: 162%;
+        --leading-163: 163%;
+        --leading-165: 165%;
+        --leading-167: 167%;
+
+
+
+        --text-custom-6xl: 64px;
+        --text-custom-5xl: 56px;
+        
+         --shadow-custom: 0px 0px 12px 3px #B6B6B640;
+
+         @keyframes phone-ring {
+        0%,
+        100% {
+            transform: rotate(0deg);
+        }
+
+        20% {
+            transform: rotate(-12deg);
+        }
+
+        40% {
+            transform: rotate(12deg);
+        }
+
+        60% {
+            transform: rotate(-10deg);
+        }
+
+        80% {
+            transform: rotate(8deg);
+        }
+    }
+
+      }
+</style>
+</head>
+
+<body>
+    <section class="bg-[url(/assets/images/webp/hero-bg.webp)] bg-center bg-no-repeat bg-[length:100%_100%]">
+        <header class="pt-6 px-5">
+            <nav class="flex bg-white max-w-[1180px] px-5 mx-auto justify-between p-4 rounded-3xl">
+                <a href="#">
+                    <img width="105.67" height="52" src="/assets/images/svg/logo.svg" alt="logo">
+                </a>
+                <input type="checkbox" id="check" class="hidden peer">
+                <label for="check"
+                    class="mane-btn cursor-pointer hidden max-lg:block text-black text-3xl-custom z-50 text-4xl">☰</label>
+
+                <div class="flex items-center max-w-[883px] justify-between w-full
+                max-lg:fixed
+                max-lg:top-0
+                max-lg:flex-col
+                max-lg:w-full
+                max-lg:flex
+              max-lg:bg-white
+                max-lg:justify-center
+                max-lg:min-h-[100vh]
+                max-lg:items-center
+                max-lg:right-[-100%]
+                max-lg:max-w-full
+                max-lg:gap-6
+                max-lg:z-10
+                peer-checked:right-0
+                transition-all duration-600">
+                    <ul class="flex gap-7 max-lg:flex-col max-lg:items-center max-lg:gap-5">
+                        <li><a class="relative font-normal text-base block leading-163 after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                href="#">Home</a></li>
+                        <li><a class="relative font-normal text-base block leading-163 after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                href="#">About</a></li>
+                        <li><a class="relative font-normal text-base block leading-163 after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                href="#">Services</a></li>
+                        <li><a class="relative font-normal text-base block leading-163 after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                href="#">Portfolio</a></li>
+                        <li><a class="relative font-normal text-base block leading-163 after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                href="#">Contact us</a></li>
+                        <li><a class="relative font-normal text-base block leading-163 after:absolute after:left-0 after:-bottom-1 after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                href="#">Request a Qoute</a></li>
+                    </ul>
+                    <a href="tel:865621-1717"
+                        class="group bg-red cursor-pointer font-bold text-white text-base flex items-center leading-125 px-5 py-[14px] rounded-[56px] gap-[10px] border border-red transition-all duration-300 hover:bg-white hover:text-red">
+
+                        <span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="group-hover:animate-[phone-ring_0.5s_ease-in-out]">
+
+                                <path
+                                    d="M11.05 14.95L9.2 16.8C8.81 17.19 8.19 17.19 7.79 16.81C7.68 16.7 7.57 16.6 7.46 16.49C6.43 15.45 5.5 14.36 4.67 13.22C3.85 12.08 3.19 10.94 2.71 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C10.83 13.32 10.94 13.42 11.04 13.52C11.44 13.91 11.45 14.55 11.05 14.95Z"
+                                    fill="currentColor" />
+
+                                <path
+                                    d="M21.9696 18.33C21.9696 18.61 21.9196 18.9 21.8196 19.18C21.7896 19.26 21.7596 19.34 21.7196 19.42C21.5496 19.78 21.3296 20.12 21.0396 20.44C20.5496 20.98 20.0096 21.37 19.3996 21.62C19.3896 21.62 19.3796 21.63 19.3696 21.63C18.7796 21.87 18.1396 22 17.4496 22C16.4296 22 15.3396 21.76 14.1896 21.27C13.0396 20.78 11.8896 20.12 10.7496 19.29C10.3596 19 9.96961 18.71 9.59961 18.4L12.8696 15.13C13.1496 15.34 13.3996 15.5 13.6096 15.61C13.6596 15.63 13.7196 15.66 13.7896 15.69C13.8696 15.72 13.9496 15.73 14.0396 15.73C14.2096 15.73 14.3396 15.67 14.4496 15.56L15.2096 14.81C15.4596 14.56 15.6996 14.37 15.9296 14.25C16.1596 14.11 16.3896 14.04 16.6396 14.04C16.8296 14.04 17.0296 14.08 17.2496 14.17C17.4696 14.26 17.6996 14.39 17.9496 14.56L21.2596 16.91C21.5196 17.09 21.6996 17.3 21.8096 17.55C21.9096 17.8 21.9696 18.05 21.9696 18.33Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </span>
+
+                        (865) 621-1717
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="hero-container max-w-[1180px] px-5 mx-auto pt-[72px] max-lg:py-20 pb-6 max-sm:py-[60px]">
+            <div class="hero-row max-xl:flex justify-center">
+                <div
+                    class="hero-left max-w-[830px] max-xl:max-w-[90%] max-sm:max-w-full max-xl:flex max-xl:flex-col max-xl:items-center">
+                    <h1
+                        class="text-white max-xl:text-center font-semibold text-custom-6xl max-lg:text-5xl max-xl:text-custom-5xl max-md:text-4xl leading-127">
+                        Transform Your Space with Precision
+                        and Quality:
+                        <br>Get a Free Quote Today!
+                    </h1>
+                    <p
+                        class="font-normal text-lg max-xl:text-center text-white max-w-[742px] leading-162 mt-5 max-sm:text-sm">
+                        Lörem ipsum koda astrobel:
+                        sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka:
+                        förutom tivaligt. Fejkade nyheter eurosamma sol: teroktig,</p>
+                    <button
+                        class="bg-red cursor-pointer font-bold text-lg leading-128 text-white px-8 py-5 rounded-[56px] mt-9 border border-transparent transition-all duration-300 hover:bg-white hover:text-red hover:border-red capitalize">Get
+                        a
+                        Quote</button>
+                    <div
+                        class="wrapper max-w-[690.5px] flex justify-between mt-[72px] max-lg:mt-10 max-md:flex-wrap max-md:justify-center max-xl:gap-6 max-xl:w-fit max-xl:items-center">
+                        <div
+                            class="bg-white flex items-center max-w-[229.17px] w-full gap-[10.67px] p-[8.33px_16px_6px_16px] rounded-2xl">
+                            <div class="flex">
+                                <img width="40" height="40" src="/assets/images/svg/google.svg" alt="google">
+                            </div>
+                            <div>
+                                <p class="font-normal text-xs leading-159 text-dark manrope">Google Review</p>
+                                <div class="flex gap-[4.33px] mt-[-4px]">
+                                    <p class="font-normal text-xl leading-160 text-dark manrope">4.6</p>
+                                    <div class="flex gap-[2px]">
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="font-normal text-xs mt-[-3px] leading-159 text-dark manrope">Based on 145
+                                    reviews</p>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white flex items-center max-w-[229.17px] w-full gap-[10.67px] p-[8.33px_16px_6px_16px] rounded-2xl">
+                            <div class="flex">
+                                <img width="40" height="40" src="/assets/images/svg/green-star.svg" alt="green-star">
+                            </div>
+                            <div>
+                                <p class="font-normal text-xs leading-159 text-dark manrope">Google Review</p>
+                                <div class="flex gap-[4.33px] mt-[-4px]">
+                                    <p class="font-normal text-xl leading-160 text-dark manrope">4.6</p>
+                                    <div class="flex gap-[2px]">
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                        <div class="flex">
+                                            <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                                alt="rating">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="font-normal text-xs leading-159 m-[-3px] text-dark manrope">Based on 145
+                                    reviews</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div>
+                                <img width="81" height="80" src="/assets/images/svg/tile.svg" alt="tile-logo">
+                            </div>
+                            <div>
+                                <img width="80" height="80" src="/assets/images/svg/awards.svg" alt="awards">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container-two max-w-[1180px] px-5 mx-auto pb-[140px] max-lg:py-20 max-md:py-[60px] pt-[174px]">
+            <h2
+                class="font-semibold text-custom-5xl leading-127 text-center max-sm:text-4xl mb-[56px] max-md:mb-10 max-lg:text-5xl capitalize">
+                What We do?</h2>
+            <div class="row-two flex flex-wrap gap-6 max-xl:justify-center">
+
+            </div>
+        </div>
+    </section>
+    <section class="bg-light-pink">
+        <div class="container-three max-w-[1180px] px-5 mx-auto py-[100px] max-lg:py-20 max-md:py-[60px]">
+            <div class="row-three flex max-xl:flex-wrap gap-10 justify-center">
+                <div class="left-three max-w-[590px] max-xl:flex max-xl:flex-col max-xl:items-center">
+                    <h2 class="font-semibold text-custom-5xl leading-127 max-xl:text-center max-sm:text-4xl capitalize">
+                        Why Choose us?</h2>
+                    <p class="font-normal text-lg leading-162 mt-5 mb-8 max-xl:text-center max-sm:text-base">Lörem ipsum
+                        koda astrobel: sutaveligen. Rodod
+                        bänera viliga. Pregigt
+                        primasofi dede facebooka: förutom tivaligt. </p>
+                    <div class="wrapper-box flex flex-col gap-6">
+                        <div class="wrapper flex gap-5">
+                            <div
+                                class="w-[62px] h-[62px] bg-deep-red/10 rounded-[10px] flex justify-center items-center">
+                                <svg width="26" height="25" viewBox="0 0 26 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13 19.6667L5 23.6667L7 15.6667L1 9L9.66667 8.33333L13 1L16.3333 8.33333L25 9L19 15.6667L21 23.6667L13 19.6667Z"
+                                        stroke="#FF0000" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="max-w-[370px]">
+                                <h2 class="font-semibold text-xl leading-160 max-sm:text-lg mb-3">High Quality Materials
+                                </h2>
+                                <p class="font-normal text-base max-sm:text-sm leading-163 text-rich-black">Es ist ein
+                                    lang erwiesener Fakt, dass ein
+                                    Leser vom Text abgelenkt wird.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper flex gap-5">
+                            <div
+                                class="w-[62px] h-[62px] bg-deep-red/10 rounded-[10px] flex justify-center items-center">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.667 13.3336V26.667H23.1475C24.4187 26.667 25.5131 25.7697 25.7624 24.5233L27.3624 16.5233C27.6924 14.8732 26.4303 13.3336 24.7475 13.3336H18.667L21.9013 8.48212C22.9242 6.94775 22.1183 4.86313 20.3293 4.41588L20.2659 4.40002C19.286 4.15505 18.2518 4.48473 17.5944 5.25162L10.667 13.3336Z"
+                                        fill="#FF0000" />
+                                    <path
+                                        d="M10.6663 13.3337V26.667M10.6663 26.667L23.1469 26.667C24.418 26.667 25.5125 25.7697 25.7617 24.5233L27.3617 16.5233C27.6918 14.8732 26.4297 13.3336 24.7469 13.3336H18.6663L21.9007 8.48212C22.9236 6.94775 22.1177 4.86313 20.3286 4.41588L20.2652 4.40002C19.2853 4.15505 18.2511 4.48473 17.5938 5.25162L10.6663 13.3337L5.33301 13.3336V26.667L10.6663 26.667Z"
+                                        stroke="#FF0000" stroke-width="2.0625" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+
+                            </div>
+                            <div class="max-w-[370px]">
+                                <h2 class="font-semibold text-xl leading-160 max-sm:text-lg mb-3">Durability with
+                                    Warranty</h2>
+                                <p class="font-normal text-base leading-163 max-sm:text-sm text-rich-black">Es ist ein
+                                    lang erwiesener Fakt, dass ein
+                                    Leser vom Text abgelenkt wird.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper flex gap-5">
+                            <div
+                                class="w-[62px] h-[62px] bg-deep-red/10 rounded-[10px] flex justify-center items-center">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.15"
+                                        d="M27.9992 21.9689V25.5819C28.0048 26.9631 26.7629 28.1164 25.3685 27.9906C13.3333 28 4 18.58 4.00942 6.62558C3.88383 5.2386 5.03143 4.00141 6.41081 4.00012H10.031C10.6166 3.99436 11.1844 4.20134 11.6284 4.58246C12.8908 5.66599 13.7028 9.3437 13.3904 10.8057C13.1465 11.9472 11.9959 12.7457 11.2136 13.5265C12.9314 16.5416 15.4329 19.0381 18.454 20.7525C19.2362 19.9718 20.0364 18.8234 21.1801 18.58C22.6473 18.2677 26.3486 19.0809 27.4278 20.3521C27.8105 20.8028 28.0139 21.3783 27.9992 21.9689Z"
+                                        fill="#FF0000" />
+                                    <path
+                                        d="M19.3333 8.66667C20.3162 8.85843 21.2919 9.2919 22 10C22.7081 10.7081 23.1416 11.6838 23.3333 12.6667M20 4C22.042 4.22685 23.8796 5.21476 25.3333 6.66667C26.7871 8.11857 27.7706 9.95825 28 12M27.9992 21.9689V25.5819C28.0048 26.963 26.7629 28.1164 25.3685 27.9906C13.3333 28 4 18.58 4.00942 6.62558C3.88383 5.2386 5.03143 4.00141 6.41081 4.00012H10.031C10.6166 3.99436 11.1844 4.20134 11.6284 4.58246C12.8908 5.66599 13.7028 9.3437 13.3904 10.8057C13.1465 11.9472 11.9959 12.7457 11.2136 13.5265C12.9314 16.5416 15.4329 19.0381 18.454 20.7525C19.2362 19.9718 20.0364 18.8234 21.1801 18.58C22.6473 18.2677 26.3486 19.0809 27.4278 20.3521C27.8105 20.8028 28.0139 21.3783 27.9992 21.9689Z"
+                                        stroke="#FF0000" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                            <div class="max-w-[370px]">
+                                <h2 class="font-semibold text-xl leading-160 max-sm:text-lg mb-3">24/7 Support</h2>
+                                <p class="font-normal text-base leading-163 max-sm:text-sm text-rich-black">Es ist ein
+                                    lang erwiesener Fakt, dass ein
+                                    Leser vom Text abgelenkt wird.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="bg-red cursor-pointer font-bold text-lg leading-128 text-white py-5 px-8 rounded-[56px] mt-9 transition-all duration-300 hover:bg-white hover:text-red capitalize">Get
+                        a
+                        Quote</button>
+                </div>
+                <div class="right">
+                    <img width="549" height="603" src="/assets/images/png/p-3.png" alt="house">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-for pt-[140px] max-xl:pt-20 max-md:pt-[60px] max-sm:px-5">
+            <h2
+                class="font-semibold text-custom-5xl text-center leading-127 max-lg:text-5xl max-sm:text-4xl capitalize">
+                What Our Customers Say</h2>
+            <p class="mt-5 font-normal text-lg max-w-[641px] mb-8 mx-auto text-center leading-162 max-sm:text-sm">Lörem
+                ipsum koda
+                astrobel:
+                sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade</p>
+            <div class="flex justify-center gap-6 max-sm:flex-wrap">
+                <div
+                    class="bg-white flex items-center border-[0.83px] border-[#14141426] max-w-[229.17px] w-full gap-[10.67px] p-[8.33px_16px_6px_16px] rounded-2xl">
+                    <div class="flex">
+                        <img width="40" height="40" src="/assets/images/svg/google.svg" alt="google">
+                    </div>
+                    <div>
+                        <p class="font-normal text-xs leading-159 text-dark">Google Review</p>
+                        <div class="flex gap-[4.33px] mt-[-4px]">
+                            <p class="font-normal text-xl leading-160 text-dark">4.6</p>
+                            <div class="flex">
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="font-normal text-xs leading-159 text-dark mt-[-1px]">Based on 145 reviews</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-white flex items-center border-[0.83px] border-[#14141426] max-w-[229.17px] w-full gap-[10.67px] p-[8.33px_16px_6px_16px] rounded-2xl">
+                    <div class="flex">
+                        <img width="40" height="40" src="/assets/images/svg/green-star.svg" alt="green-star">
+                    </div>
+                    <div>
+                        <p class="font-normal text-xs leading-159 text-dark">Google Review</p>
+                        <div class="flex gap-[4.33px] mt-[-4px]">
+                            <p class="font-normal text-xl leading-160 text-dark">4.6</p>
+                            <div class="flex">
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                                <div class="flex">
+                                    <img width="16.67" height="16.67" src="/assets/images/svg/rating-star.svg"
+                                        alt="rating">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="font-normal text-xs leading-159 text-dark mt-[-1px]">Based on 145 reviews</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-for mt-4">
+                <div class="swiper mySwiper max-w-[1916px]">
+                    <div class="swiper-wrapper py-10">
+                        <div class="swiper-slide rounded-3xl max-w-[364px] shadow-[0px_2px_44px_3px_#5757571A] p-6">
+                            <div class="flex gap-2">
+                                <div class="flex max-w-[40px] h-[40px]">
+                                    <img width="40" height="40" src="/assets/images/png/swipper-img.png" alt="pic">
+                                </div>
+                                <div class="">
+                                    <h3 class="font-semibold text-base leading-165 text-left">Mark T.</h3>
+                                    <p class="font-normal text-sm leading-158 mt-[-3px] text-left">Fitness enthusiast
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex my-4 gap-1">
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="text-left font-normal text-base leading-163 manrope">"As a fitness enthusiast, I
+                                was
+                                skeptical about resistance bands at first. But after
+                                trying these, I'm a believer. The quality is top-notch, and they've become an integral
+                                part of my workout routine. I can't believe how versatile they are.”</p>
+                        </div>
+                        <div class="swiper-slide rounded-3xl max-w-[364px] shadow-[0px_2px_44px_3px_#5757571A] p-6">
+                            <div class="flex gap-2">
+                                <div class="flex max-w-[40px] h-[40px]">
+                                    <img width="40" height="40" src="/assets/images/png/swipper-img2.png" alt="pic">
+                                </div>
+                                <div class="">
+                                    <h3 class="font-semibold text-base leading-165 text-left">Mark T.</h3>
+                                    <p class="font-normal text-sm leading-158 mt-[-3px] text-left">Fitness enthusiast
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex my-4 gap-1">
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="text-left font-normal text-base leading-163 manrope">"As a fitness enthusiast, I
+                                was
+                                skeptical about resistance bands at first. But after
+                                trying these, I'm a believer. The quality is top-notch, and they've become an integral
+                                part of my workout routine. I can't believe how versatile they are.”</p>
+                        </div>
+                        <div class="swiper-slide rounded-3xl max-w-[364px] shadow-[0px_2px_44px_3px_#5757571A] p-6">
+                            <div class="flex gap-2">
+                                <div class="flex max-w-[40px] h-[40px]">
+                                    <img width="40" height="40" src="/assets/images/png/swipper-img3.png" alt="pic">
+                                </div>
+                                <div class="">
+                                    <h3 class="font-semibold text-base leading-165 text-left">Mark T.</h3>
+                                    <p class="font-normal text-sm leading-158 mt-[-3px] text-left">Fitness enthusiast
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex my-4 gap-1">
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="text-left font-normal text-base leading-163 manrope">"As a fitness enthusiast, I
+                                was
+                                skeptical about resistance bands at first. But after
+                                trying these, I'm a believer. The quality is top-notch, and they've become an integral
+                                part of my workout routine. I can't believe how versatile they are.”</p>
+                        </div>
+                        <div class="swiper-slide rounded-3xl max-w-[364px] shadow-[0px_2px_44px_3px_#5757571A] p-6">
+                            <div class="flex gap-2">
+                                <div class="flex max-w-[40px] h-[40px]">
+                                    <img width="40" height="40" src="/assets/images/png/swipper-img4.png" alt="pic">
+                                </div>
+                                <div class="">
+                                    <h3 class="font-semibold text-base leading-165 text-left">Mark T.</h3>
+                                    <p class="font-normal text-sm leading-158 mt-[-3px] text-left">Fitness enthusiast
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex my-4 gap-1">
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="text-left font-normal text-base leading-163 manrope">"As a fitness enthusiast, I
+                                was
+                                skeptical about resistance bands at first. But after
+                                trying these, I'm a believer. The quality is top-notch, and they've become an integral
+                                part of my workout routine. I can't believe how versatile they are.”</p>
+                        </div>
+                        <div class="swiper-slide rounded-3xl max-w-[364px] shadow-[0px_2px_44px_3px_#5757571A] p-6">
+                            <div class="flex gap-2">
+                                <div class="flex max-w-[40px] h-[40px]">
+                                    <img width="40" height="40" src="/assets/images/png/swipper-img.png" alt="pic">
+                                </div>
+                                <div class="">
+                                    <h3 class="font-semibold text-base leading-165 text-left">Mark T.</h3>
+                                    <p class="font-normal text-sm leading-158 mt-[-3px] text-left">Fitness enthusiast
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex my-4 gap-1">
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="text-left font-normal text-base leading-163 manrope">"As a fitness enthusiast, I
+                                was
+                                skeptical about resistance bands at first. But after
+                                trying these, I'm a believer. The quality is top-notch, and they've become an integral
+                                part of my workout routine. I can't believe how versatile they are.”</p>
+                        </div>
+                        <div class="swiper-slide rounded-3xl max-w-[364px] shadow-[0px_2px_44px_3px_#5757571A] p-6">
+                            <div class="flex gap-2">
+                                <div class="flex max-w-[40px] h-[40px]">
+                                    <img width="40" height="40" src="/assets/images/png/swipper-img2.png" alt="pic">
+                                </div>
+                                <div class="">
+                                    <h3 class="font-semibold text-base leading-165 text-left">Mark T.</h3>
+                                    <p class="font-normal text-sm leading-158 mt-[-3px] text-left">Fitness enthusiast
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex my-4 gap-1">
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="text-left font-normal text-base leading-163 manrope">"As a fitness enthusiast, I
+                                was
+                                skeptical about resistance bands at first. But after
+                                trying these, I'm a believer. The quality is top-notch, and they've become an integral
+                                part of my workout routine. I can't believe how versatile they are.”</p>
+                        </div>
+                        <div class="swiper-slide rounded-3xl max-w-[364px] shadow-[0px_2px_44px_3px_#5757571A] p-6">
+                            <div class="flex gap-2">
+                                <div class="flex max-w-[40px] h-[40px]">
+                                    <img width="40" height="40" src="/assets/images/png/swipper-img3.png" alt="pic">
+                                </div>
+                                <div class="">
+                                    <h3 class="font-semibold text-base leading-165 text-left">Mark T.</h3>
+                                    <p class="font-normal text-sm leading-158 mt-[-3px] text-left">Fitness enthusiast
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex my-4 gap-1">
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="text-left font-normal text-base leading-163 manrope">"As a fitness enthusiast, I
+                                was
+                                skeptical about resistance bands at first. But after
+                                trying these, I'm a believer. The quality is top-notch, and they've become an integral
+                                part of my workout routine. I can't believe how versatile they are.”</p>
+                        </div>
+                        <div class="swiper-slide rounded-3xl max-w-[364px] shadow-[0px_2px_44px_3px_#5757571A] p-6">
+                            <div class="flex gap-2">
+                                <div class="flex max-w-[40px] h-[40px]">
+                                    <img width="40" height="40" src="/assets/images/png/swipper-img4.png" alt="pic">
+                                </div>
+                                <div class="">
+                                    <h3 class="font-semibold text-base leading-165 text-left">Mark T.</h3>
+                                    <p class="font-normal text-sm leading-158 mt-[-3px] text-left">Fitness enthusiast
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex my-4 gap-1">
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="text-left font-normal text-base leading-163 manrope">"As a fitness enthusiast, I
+                                was
+                                skeptical about resistance bands at first. But after
+                                trying these, I'm a believer. The quality is top-notch, and they've become an integral
+                                part of my workout routine. I can't believe how versatile they are.”</p>
+                        </div>
+                        <div class="swiper-slide rounded-3xl max-w-[364px] shadow-[0px_2px_44px_3px_#5757571A] p-6">
+                            <div class="flex gap-2">
+                                <div class="flex max-w-[40px] h-[40px]">
+                                    <img width="40" height="40" src="/assets/images/png/swipper-img.png" alt="pic">
+                                </div>
+                                <div class="">
+                                    <h3 class="font-semibold text-base leading-165 text-left">Mark T.</h3>
+                                    <p class="font-normal text-sm leading-158 mt-[-3px] text-left">Fitness enthusiast
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex my-4 gap-1">
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                                <div class="max-w-[24px] h-[24px]">
+                                    <img width="24px" height="24px" src="/assets/images/svg/rating-star.svg" alt="">
+                                </div>
+                            </div>
+                            <p class="text-left font-normal text-base leading-163">"As a fitness enthusiast, I was
+                                skeptical about resistance bands at first. But after
+                                trying these, I'm a believer. The quality is top-notch, and they've become an integral
+                                part of my workout routine. I can't believe how versatile they are.”</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination hidden"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-five pt-[100px] max-w-[1180px] mx-auto px-5 max-lg:pt-10 max-md:pt-5">
+            <div class="row-five flex gap-[63px] max-lg:flex-wrap max-lg:justify-center max-sm:gap-10">
+                <div class="left max-w-[485px]">
+                    <img width="485" height="631" src="/assets/images/png/p-5.png" alt="furniture">
+                </div>
+                <div class="right-five w-[592px] max-xl:flex max-xl:flex-col max-xl:items-center">
+                    <h2
+                        class="font-semibold text-custom-5xl leading-127 max-xl:text-center max-xl:text-5xl max-sm:text-4xl capitalize">
+                        How it works?</h2>
+                    <p class="font-normal text-lg max-w-[592px] leading-162 mt-5 max-xl:text-center max-sm:text-sm">
+                        Lörem ipsum koda astrobel: sutaveligen.
+                        Rodod bänera
+                        viliga. Pregigt primasofi dede facebooka:
+                        förutom tivaligt.</p>
+                    <div class="flex flex-col gap-4 mt-8">
+                        <div class="flex gap-5 p-4 shadow-[0px_1px_28px_1px_#4747471A] rounded-3xl">
+                            <div class="w-8 h-8 min-w-[17px] flex justify-center items-center">
+                                <img width="26.67" height="26.67" src="/assets/images/svg/red-tick.svg" alt="">
+                            </div>
+                            <div>
+                                <h2 class="font-semibold text-xl leading-160 max-sm:text-lg text-rich-black">Contact us
+                                </h2>
+                                <p class="font-normal text-base leading-163 max-sm:text-sm mt-3">Lörem ipsum deligen
+                                    vuprer diar
+                                    faktigt på dehädiska att sara. Persion. Repp löng blippbetalning. Megaliga fadat om
+                                    än dening</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 p-4 shadow-[0px_1px_28px_1px_#4747471A] rounded-3xl">
+                            <div class="w-8 h-8 min-w-[17px] flex justify-center items-center">
+                                <img width="26.67" height="26.67" src="/assets/images/svg/red-tick.svg" alt="">
+                            </div>
+                            <div>
+                                <h2 class="font-semibold text-xl leading-160 max-sm:text-lg text-rich-black">Get a Qoute
+                                </h2>
+                                <p class="font-normal text-base leading-163 max-sm:text-sm mt-3">Lörem ipsum deligen
+                                    vuprer diar
+                                    faktigt på dehädiska att sara. Persion. Repp löng blippbetalning. Megaliga fadat om
+                                    än dening</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 p-4 shadow-[0px_1px_28px_1px_#4747471A] rounded-3xl">
+                            <div class="w-8 h-8 min-w-[17px] flex justify-center items-center">
+                                <img width="26.67" height="26.67" src="/assets/images/svg/red-tick.svg" alt="">
+                            </div>
+                            <div>
+                                <h2 class="font-semibold text-xl leading-160 max-sm:text-lg text-rich-black">Get your
+                                    Work Done</h2>
+                                <p class="font-normal text-base leading-163 max-sm:text-sm mt-3">Lörem ipsum deligen
+                                    vuprer diar
+                                    faktigt på dehädiska att sara. Persion. Repp löng blippbetalning. Megaliga fadat om
+                                    än dening</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-9 flex gap-6 max-sm:flex-wrap max-sm:justify-center">
+                        <button
+                            class="font-bold cursor-pointer text-lg leading-128 text-white bg-red rounded-[56px] py-5 px-8 border border-transparent transition-all duration-300 hover:bg-white hover:text-red hover:border-red capitalize">
+                            Get a Quote
+                        </button>
+                        <button
+                            class="text-red cursor-pointer font-bold text-lg leading-128 pt-5 pb-[19px] px-8 rounded-[56px] border border-red transition-all duration-300 hover:text-white hover:bg-red hover:border-transparent">
+                            View Tile Visualizer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-six">
+        <div class="container-six py-[140px] max-w-[1180px] px-5 mx-auto max-lg:py-20 max-md:py-[60px]">
+            <div
+                class="row-six py-16 bg-[linear-gradient(#FF0000B3,#FF0000B3),url('/assets/images/png/p-6.png')] bg-cover bg-center rounded-3xl max-md:px-1">
+                <h1
+                    class="max-w-[574px] font-semibold text-custom-5xl text-white text-center mx-auto max-lg:text-5xl max-md:text-4xl capitalize">
+                    Interested? <br>
+                    Get in touch with us</h1>
+                <p
+                    class="font-normal text-lg leading-162 max-w-[592px] mt-5 text-white mx-auto text-center max-md:text-sm">
+                    Lörem ipsum
+                    koda astrobel: sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt.
+                </p>
+                <button
+                    class="font-bold capitalize block mt-9 text-lg mx-auto py-5 px-8 rounded-[56px] text-red bg-white leading-128 text-center cursor-pointer border border-transparent hover:text-white hover:bg-red-700 transition-all duration-300">Get
+                    a Quote</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-seven mx-auto max-w-[1180px] px-5">
+            <h2 class="font-semibold text-custom-5xl text-center leading-127 max-lg:text-5xl max-md:text-4xl">Our Blog
+            </h2>
+            <p
+                class="mt-5 font-normal mb-[56px] text-lg leading-162 text-center mx-auto max-w-[592px] max-md:text-sm max-md:mb-10 text-clip text-rich-black">
+                Lörem ipsum koda
+                astrobel: sutaveligen. Rodod bänera viliga. Pregigt
+                primasofi dede facebooka: förutom
+                tivaligt. Fejkade
+            </p>
+            <div class="row-seven flex gap-6 max-xl:flex max-xl:flex-wrap max-xl:justify-center">
+
+            </div>
+        </div>
+    </section>
+    <section class="section-eight">
+        <div class="container-eight py-[140px] px-5 max-lg:py-20 max-md:py-[60px]">
+            <h2 class="font-semibold text-custom-5xl text-center max-xl:text-5xl max-md:text-4xl">Frequently Asked
+                Questions</h2>
+            <p
+                class="max-w-[592px] font-normal mb-14 text-lg mt-5 leading-162 text-center mx-auto max-md:text-sm max-sm:mb-6 text-rich-black">
+                Lörem ipsum koda
+                astrobel:
+                sutaveligen. Rodod bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade</p>
+            <div class="row-eight">
+                <div class="max-w-[912px] mx-auto space-y-3">
+
+                    <!-- FAQ 1 -->
+                    <div class="faq-item bg-white rounded-xl shadow-[0px_2px_44px_3px_#5757571A]">
+
+                        <button
+                            class="faq-question cursor-pointer w-full px-5 py-[21px] flex items-center justify-between text-left">
+
+                            <span class="font-normal text-lg leading-[1.67]">
+                                Lörem ipsum koda astrobel: sutaveligen.
+                            </span>
+
+                            <span class="faq-icon w-5 h-5 flex items-center justify-center shrink-0">
+
+                                <svg class="transition-transform duration-300 ease-in-out" width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <path
+                                        d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.18C0 17.83 2.17 20 5.81 20H14.18C17.82 20 19.99 17.83 19.99 14.19V5.81C20 2.17 17.83 0 14.19 0ZM14.06 9.17L10.53 12.7C10.38 12.85 10.19 12.92 10 12.92C9.81 12.92 9.62 12.85 9.47 12.7L5.94 9.17C5.65 8.88 5.65 8.4 5.94 8.11C6.23 7.82 6.71 7.82 7 8.11L10 11.11L13 8.11C13.29 7.82 13.77 7.82 14.06 8.11C14.35 8.4 14.35 8.87 14.06 9.17Z"
+                                        fill="#FF0000" />
+
+                                </svg>
+
+                            </span>
+                        </button>
+
+                        <div
+                            class="faq-answer max-h-0 overflow-hidden opacity-0 px-4 font-normal text-lg leading-[1.67] transition-all duration-300 ease-in-out">
+
+                            <div class="pb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item bg-white rounded-xl shadow-[0px_2px_44px_3px_#5757571A]">
+
+                        <button
+                            class="faq-question cursor-pointer w-full px-5 py-[21px] flex items-center justify-between text-left">
+
+                            <span class="font-normal text-lg leading-[1.67]">
+                                Rodod bänera viliga
+                            </span>
+
+                            <span class="faq-icon w-5 h-5 flex items-center justify-center shrink-0">
+
+                                <svg class="transition-transform duration-300 ease-in-out" width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <path
+                                        d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.18C0 17.83 2.17 20 5.81 20H14.18C17.82 20 19.99 17.83 19.99 14.19V5.81C20 2.17 17.83 0 14.19 0ZM14.06 9.17L10.53 12.7C10.38 12.85 10.19 12.92 10 12.92C9.81 12.92 9.62 12.85 9.47 12.7L5.94 9.17C5.65 8.88 5.65 8.4 5.94 8.11C6.23 7.82 6.71 7.82 7 8.11L10 11.11L13 8.11C13.29 7.82 13.77 7.82 14.06 8.11C14.35 8.4 14.35 8.87 14.06 9.17Z"
+                                        fill="#FF0000" />
+
+                                </svg>
+
+                            </span>
+                        </button>
+
+                        <div
+                            class="faq-answer max-h-0 overflow-hidden opacity-0 px-4 font-normal text-lg leading-[1.67] transition-all duration-300 ease-in-out">
+
+                            <div class="pb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item bg-white rounded-xl shadow-[0px_2px_44px_3px_#5757571A]">
+
+                        <button
+                            class="faq-question cursor-pointer w-full px-5 py-[21px] flex items-center justify-between text-left">
+
+                            <span class="font-normal text-lg leading-[1.67]">
+                                Pregigt primasofi dede facebooka: förutom
+                            </span>
+
+                            <span class="faq-icon w-5 h-5 flex items-center justify-center shrink-0">
+
+                                <svg class="transition-transform duration-300 ease-in-out" width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <path
+                                        d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.18C0 17.83 2.17 20 5.81 20H14.18C17.82 20 19.99 17.83 19.99 14.19V5.81C20 2.17 17.83 0 14.19 0ZM14.06 9.17L10.53 12.7C10.38 12.85 10.19 12.92 10 12.92C9.81 12.92 9.62 12.85 9.47 12.7L5.94 9.17C5.65 8.88 5.65 8.4 5.94 8.11C6.23 7.82 6.71 7.82 7 8.11L10 11.11L13 8.11C13.29 7.82 13.77 7.82 14.06 8.11C14.35 8.4 14.35 8.87 14.06 9.17Z"
+                                        fill="#FF0000" />
+
+                                </svg>
+
+                            </span>
+                        </button>
+
+                        <div
+                            class="faq-answer max-h-0 overflow-hidden opacity-0 px-4 font-normal text-lg leading-[1.67] transition-all duration-300 ease-in-out">
+
+                            <div class="pb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item bg-white rounded-xl shadow-[0px_2px_44px_3px_#5757571A]">
+
+                        <button
+                            class="faq-question cursor-pointer w-full px-5 py-[21px] flex items-center justify-between text-left">
+
+                            <span class="font-normal text-lg leading-[1.67]">
+                                Ipsum koda astrobel: sutaveligen. Rodod bänera viliga.
+                            </span>
+
+                            <span class="faq-icon w-5 h-5 flex items-center justify-center shrink-0">
+
+                                <svg class="transition-transform duration-300 ease-in-out" width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <path
+                                        d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.18C0 17.83 2.17 20 5.81 20H14.18C17.82 20 19.99 17.83 19.99 14.19V5.81C20 2.17 17.83 0 14.19 0ZM14.06 9.17L10.53 12.7C10.38 12.85 10.19 12.92 10 12.92C9.81 12.92 9.62 12.85 9.47 12.7L5.94 9.17C5.65 8.88 5.65 8.4 5.94 8.11C6.23 7.82 6.71 7.82 7 8.11L10 11.11L13 8.11C13.29 7.82 13.77 7.82 14.06 8.11C14.35 8.4 14.35 8.87 14.06 9.17Z"
+                                        fill="#FF0000" />
+
+                                </svg>
+
+                            </span>
+                        </button>
+
+                        <div
+                            class="faq-answer max-h-0 overflow-hidden opacity-0 px-4 font-normal text-lg leading-[1.67] transition-all duration-300 ease-in-out">
+
+                            <div class="pb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-item bg-white rounded-xl shadow-[0px_2px_44px_3px_#5757571A]">
+
+                        <button
+                            class="faq-question cursor-pointer w-full px-5 py-[21px] flex items-center justify-between text-left">
+
+                            <span class="font-normal text-lg leading-[1.67]">
+                                Rodod bänera viliga. Pregigt primasofi dede facebooka
+                            </span>
+
+                            <span class="faq-icon w-5 h-5 flex items-center justify-center shrink-0">
+
+                                <svg class="transition-transform duration-300 ease-in-out" width="20" height="20"
+                                    viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                    <path
+                                        d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.18C0 17.83 2.17 20 5.81 20H14.18C17.82 20 19.99 17.83 19.99 14.19V5.81C20 2.17 17.83 0 14.19 0ZM14.06 9.17L10.53 12.7C10.38 12.85 10.19 12.92 10 12.92C9.81 12.85 9.62 12.7 9.47 12.7L5.94 9.17C5.65 8.88 5.65 8.4 5.94 8.11C6.23 7.82 6.71 7.82 7 8.11L10 11.11L13 8.11C13.29 7.82 13.77 7.82 14.06 8.11C14.35 8.4 14.35 8.87 14.06 9.17Z"
+                                        fill="#FF0000" />
+
+                                </svg>
+
+                            </span>
+                        </button>
+
+                        <div
+                            class="faq-answer max-h-0 overflow-hidden opacity-0 px-4 font-normal text-lg leading-[1.67] transition-all duration-300 ease-in-out">
+
+                            <div class="pb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-areas">
+        <div class="container-areas max-w-[1180px] px-5 mx-auto">
+            <h2
+                class="font-semibold max-w-[589px] max-xl:mx-auto max-xl:text-center capitalize leading-127 text-custom-5xl max-lg:text-5xl max-md:text-4xl">
+                We provide services in these areas</h2>
+            <p
+                class="max-w-[592px] max-xl:mx-auto max-xl:text-center mt-5 mb-14 font-normal text-lg leading-162 max-md:text-sm max-sm:mb-6">
+                Lörem ipsum koda astrobel: sutaveligen.
+                Rodod
+                bänera viliga. Pregigt primasofi dede facebooka: förutom tivaligt. Fejkade</p>
+            <div class="row-areas flex gap-5 flex-wrap justify-center">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container max-w-[1180px] px-5 mx-auto pt-[120px] max-lg:py-20 max-md:py-[60px]">
+            <div class="footer-row flex justify-between gap-5 max-xl:flex-wrap">
+                <div class="left-footer">
+                    <a href="#">
+                        <img width="175.59" height="86" src="/assets/images/svg/footer-logo.svg" alt="logo">
+                    </a>
+                    <div class="flex items-center gap-2 mb-4 mt-5">
+                        <div class="email-icon flex items-center justify-center w-6 h-6">
+                            <svg class="cursor-pointer" width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.939 0C16.28 0 17.57 0.53 18.519 1.481C19.469 2.43 20 3.71 20 5.05V12.95C20 15.74 17.73 18 14.939 18H5.06C2.269 18 0 15.74 0 12.95V5.05C0 2.26 2.259 0 5.06 0H14.939ZM16.07 5.2C15.86 5.189 15.66 5.26 15.509 5.4L11 9C10.42 9.481 9.589 9.481 9 9L4.5 5.4C4.189 5.17 3.759 5.2 3.5 5.47C3.23 5.74 3.2 6.17 3.429 6.47L3.56 6.6L8.11 10.15C8.67 10.59 9.349 10.83 10.06 10.83C10.769 10.83 11.46 10.59 12.019 10.15L16.53 6.54L16.61 6.46C16.849 6.17 16.849 5.75 16.599 5.46C16.46 5.311 16.269 5.22 16.07 5.2Z"
+                                    fill="#FF0000" />
+                            </svg>
+                        </div>
+                        <a class="font-normal text-base leading-163 text-dark-surface"
+                            href="mailto:help@Dealzip.com">help@Dealzip.com</a>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <div class="call-icon flex items-center justify-center w-6 h-6">
+                            <svg class="cursor-pointer" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M9.03174 9.97239C13.0208 13.9604 13.9258 9.34672 16.4656 11.8848C18.9143 14.3328 20.3216 14.8232 17.2192 17.9247C16.8306 18.237 14.3616 21.9943 5.6846 13.3197C-2.99348 4.644 0.761585 2.17244 1.07397 1.78395C4.18387 -1.32615 4.66586 0.0893829 7.11449 2.53733C9.65436 5.0765 5.04266 5.98441 9.03174 9.97239Z"
+                                    fill="#FF0000" />
+                            </svg>
+                        </div>
+                        <a class="font-normal text-base leading-163 text-dark-surface" href="tel:+123445667889">+1 234
+                            456 678 89</a>
+                    </div>
+                    <div class="flex gap-2 mt-6">
+                        <a class="transition-all duration-300 hover:scale-110 hover:shadow-[0_0_12px_#FF000080] rounded-full"
+                            href="https://www.facebook.com/" target="_blank">
+                            <div class="w-8 h-8 rounded-full flex justify-center items-center">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 0C7.16342 0 0 7.16342 0 16C0 24.8366 7.16342 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16342 24.8366 0 16 0ZM22.1041 8.14813L19.8911 8.14911C18.1557 8.14911 17.8202 8.97375 17.8202 10.1837V12.8517H21.9584L21.9564 17.0305H17.8205V27.7544H13.5042V17.0305H9.89594V12.8517H13.5042V9.7699C13.5042 6.19343 15.6893 4.24561 18.8795 4.24561L22.1044 4.25052L22.1041 8.14813Z"
+                                        fill="#FF0000" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="transition-all duration-300 hover:scale-110 hover:shadow-[0_0_12px_#FF000080] rounded-full"
+                            href="https://www.instagram.com/" target="_blank">
+                            <div class="w-8 h-8 bg-red rounded-full flex justify-center items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.0276 2C14.1526 2.003 14.7236 2.009 15.2166 2.023L15.4106 2.03C15.6346 2.038 15.8556 2.048 16.1226 2.06C17.1866 2.11 17.9126 2.278 18.5496 2.525C19.2096 2.779 19.7656 3.123 20.3216 3.678C20.8301 4.1779 21.2236 4.78259 21.4746 5.45C21.7216 6.087 21.8896 6.813 21.9396 7.878C21.9516 8.144 21.9616 8.365 21.9696 8.59L21.9756 8.784C21.9906 9.276 21.9966 9.847 21.9986 10.972L21.9996 11.718V13.028C22.0021 13.7574 21.9944 14.4868 21.9766 15.216L21.9706 15.41C21.9626 15.635 21.9526 15.856 21.9406 16.122C21.8906 17.187 21.7206 17.912 21.4746 18.55C21.2243 19.2178 20.8307 19.8226 20.3216 20.322C19.8216 20.8303 19.2169 21.2238 18.5496 21.475C17.9126 21.722 17.1866 21.89 16.1226 21.94C15.8853 21.9512 15.648 21.9612 15.4106 21.97L15.2166 21.976C14.7236 21.99 14.1526 21.997 13.0276 21.999L12.2816 22H10.9726C10.2429 22.0025 9.51312 21.9949 8.7836 21.977L8.5896 21.971C8.35221 21.962 8.11487 21.9517 7.8776 21.94C6.8136 21.89 6.0876 21.722 5.4496 21.475C4.78227 21.2244 4.17782 20.8308 3.6786 20.322C3.16965 19.8223 2.77582 19.2176 2.5246 18.55C2.2776 17.913 2.1096 17.187 2.0596 16.122C2.04846 15.8847 2.03846 15.6474 2.0296 15.41L2.0246 15.216C2.00617 14.4868 1.99784 13.7574 1.9996 13.028V10.972C1.99681 10.2426 2.00414 9.5132 2.0216 8.784L2.0286 8.59C2.0366 8.365 2.0466 8.144 2.0586 7.878C2.1086 6.813 2.2766 6.088 2.5236 5.45C2.77471 4.7819 3.16932 4.17702 3.6796 3.678C4.17869 3.16947 4.78274 2.77599 5.4496 2.525C6.0876 2.278 6.8126 2.11 7.8776 2.06C8.1436 2.048 8.3656 2.038 8.5896 2.03L8.7836 2.024C9.51279 2.00623 10.2422 1.99857 10.9716 2.001L13.0276 2ZM11.9996 7C10.6735 7 9.40175 7.52678 8.46407 8.46447C7.52638 9.40215 6.9996 10.6739 6.9996 12C6.9996 13.3261 7.52638 14.5979 8.46407 15.5355C9.40175 16.4732 10.6735 17 11.9996 17C13.3257 17 14.5975 16.4732 15.5351 15.5355C16.4728 14.5979 16.9996 13.3261 16.9996 12C16.9996 10.6739 16.4728 9.40215 15.5351 8.46447C14.5975 7.52678 13.3257 7 11.9996 7ZM11.9996 9C12.3936 8.99993 12.7837 9.07747 13.1477 9.22817C13.5117 9.37887 13.8424 9.5998 14.1211 9.87833C14.3997 10.1569 14.6207 10.4875 14.7715 10.8515C14.9224 11.2154 15 11.6055 15.0001 11.9995C15.0002 12.3935 14.9226 12.7836 14.7719 13.1476C14.6212 13.5116 14.4003 13.8423 14.1218 14.121C13.8432 14.3996 13.5126 14.6206 13.1486 14.7714C12.7847 14.9223 12.3946 14.9999 12.0006 15C11.205 15 10.4419 14.6839 9.87928 14.1213C9.31667 13.5587 9.0006 12.7956 9.0006 12C9.0006 11.2044 9.31667 10.4413 9.87928 9.87868C10.4419 9.31607 11.205 9 12.0006 9M17.2506 5.5C16.9191 5.5 16.6011 5.6317 16.3667 5.86612C16.1323 6.10054 16.0006 6.41848 16.0006 6.75C16.0006 7.08152 16.1323 7.39946 16.3667 7.63388C16.6011 7.8683 16.9191 8 17.2506 8C17.5821 8 17.9001 7.8683 18.1345 7.63388C18.3689 7.39946 18.5006 7.08152 18.5006 6.75C18.5006 6.41848 18.3689 6.10054 18.1345 5.86612C17.9001 5.6317 17.5821 5.5 17.2506 5.5Z"
+                                        fill="white" />
+                                </svg>
+
+                            </div>
+                        </a>
+                        <a class="transition-all duration-300 hover:scale-110 hover:shadow-[0_0_12px_#FF000080] rounded-full"
+                            href="https://x.com/" target="_blank">
+                            <div class="w-8 h-8 bg-red rounded-full flex justify-center items-center">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.9498 7.96187L17.7992 0H16.1762L10.2288 6.9132L5.4787 0H0L7.1831 10.454L0 18.8032H1.62318L7.90374 11.5027L12.9202 18.8032H18.3989L10.9494 7.96187H10.9498ZM2.20803 1.22192H4.70113L16.1769 17.6369H13.6838L2.20803 1.22192Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </a>
+                        <a class="transition-all duration-300 hover:scale-110 hover:shadow-[0_0_12px_#FF000080] rounded-full"
+                            href="https://www.linkedin.com/feed/" target="_blank">
+                            <div class="w-8 h-8 rounded-full flex justify-center items-center">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 0C7.16479 0 0 7.16479 0 16C0 24.8352 7.16479 32 16 32C24.8352 32 32 24.8352 32 16C32 7.16479 24.8352 0 16 0ZM11.3506 24.1875H7.45386V12.4641H11.3506V24.1875ZM9.40234 10.8633H9.37695C8.06934 10.8633 7.22363 9.96313 7.22363 8.83813C7.22363 7.68774 8.09521 6.8125 9.42822 6.8125C10.7612 6.8125 11.5815 7.68774 11.6069 8.83813C11.6069 9.96313 10.7612 10.8633 9.40234 10.8633ZM25.4014 24.1875H21.5051V17.9158C21.5051 16.3396 20.9409 15.2646 19.531 15.2646C18.4546 15.2646 17.8135 15.9897 17.5317 16.6897C17.4287 16.9402 17.4036 17.2903 17.4036 17.6406V24.1875H13.5071C13.5071 24.1875 13.5581 13.564 13.5071 12.4641H17.4036V14.124C17.9214 13.3252 18.8479 12.189 20.9153 12.189C23.479 12.189 25.4014 13.8645 25.4014 17.4653V24.1875Z"
+                                        fill="#FF0000" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="right-footer flex max-w-[832px] w-full justify-between max-md:flex-wrap gap-5 max-md:justify-start max-sm:gap-10 max-sm:gap-y-5">
+                    <div>
+                        <h2 class="font-semibold mb-5 text-xl leading-160">
+                            links
+                        </h2>
+                        <ul class="flex flex-col gap-3">
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">home</a></li>
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">about us</a></li>
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">Services</a></li>
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">Showcase</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold mb-5 text-xl leading-160">
+                            legal
+                        </h2>
+                        <ul class="flex flex-col gap-3">
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">terms of use</a></li>
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">privacy policy</a></li>
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">cookie policy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold mb-5 text-xl leading-160">
+                            product
+                        </h2>
+                        <ul class="flex flex-col gap-3">
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">take tour</a></li>
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">live chat</a></li>
+                            <li><a class="text-dark-surface relative font-normal w-fit text-base leading-163 block after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[1px] after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                                    href="#">reveiws</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="font-semibold mb-5 text-xl leading-160">
+                            Newsletter
+                        </h2>
+                        <ul class="flex flex-col gap-3">
+                            <li>
+                                <p class="text-dark-surface font-normal text-base leading-163 block" href="#">Stay up to
+                                    date</a>
+                            </li>
+                        </ul>
+                        <form
+                            class="p-[9.13px_10px_9.14px_25px] mt-3 flex gap-2 border max-w-[340px] border-black/15 rounded-[62px]">
+                            <input type="email" placeholder="Your email" required
+                                class="font-normal outline-none w-full placeholder:text-gray text-base leading-163">
+                            <button type="submit"
+                                class="font-semibold cursor-pointer text-base p-[15.44px_41px_16.53px_40px] rounded-[62px] text-white bg-red leading-145 max-sm:py-[10px] max-sm:px-4 border border-transparent hover:bg-white hover:text-red hover:border-red transition-all duration-300">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="py-4 px-5 mt-[45px] border-t border-t-transparent [border-image:linear-gradient(90deg,rgba(22,22,22,0)_0%,#696969_51.56%,rgba(22,22,22,0)_100%)_1]">
+            <p class="font-normal text-base leading-163 text-dark-surface text-center max-sm:text-sm">Copyright 2024
+                ceramicsolutions.com all rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const rowTwo = document.querySelector(".row-two");
+
+        const CardData = [
+            {
+                img: "/assets/images/png/card-img.png",
+                title: "Kitchen Backsplash",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+            {
+                img: "/assets/images/png/card-img-2.png",
+                title: "Custom Showers",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+            {
+                img: "/assets/images/png/card-img-3.png",
+                title: "Custom Flooring",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+            {
+                img: "/assets/images/png/card-img-4.png",
+                title: "Large Format Tiling",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+            {
+                img: "/assets/images/png/card-img-5.png",
+                title: "Wall Tiling",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+            {
+                img: "/assets/images/png/card-img-6.png",
+                title: "ADA Compliant Showers",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+            {
+                img: "/assets/images/png/card-img-7.png",
+                title: "Fireplace Tiling",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+        ];
+
+        rowTwo.innerHTML = CardData.map((item) =>
+            `<div class="card overflow-hidden p-6 max-w-[364px] transition-all duration-300 hover:shadow-[0px_0px_12px_3px_#B6B6B640] cursor-pointer border border-[#0000001F] rounded-[24px]">
+            <div>
+                <img
+                 src="${item.img}"
+                 >
+                <h2 class="font-semibold text-2xl mt-6">${item.title}</h2>
+                <p class="font-normal text-base mt-3 mb-6">${item.heading}</p>
+                <button class="flex cursor-pointer gap-[10px] group items-center">
+                    <p class="text-red font-semibold">${item.text}</p>
+                    <svg class="group-hover:translate-x-[10px] transition-all duration-600" width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M0.75 4.77344C0.335786 4.77344 0 5.10922 0 5.52344C0 5.93765 0.335786 6.27344 0.75 6.27344V4.77344ZM25.2803 6.05377C25.5732 5.76087 25.5732 5.286 25.2803 4.99311L20.5074 0.220137C20.2145 -0.0727568 19.7396 -0.0727568 19.4467 0.220137C19.1538 0.51303 19.1538 0.987904 19.4467 1.2808L23.6893 5.52344L19.4467 9.76608C19.1538 10.059 19.1538 10.5338 19.4467 10.8267C19.7396 11.1196 20.2145 11.1196 20.5074 10.8267L25.2803 6.05377ZM0.75 6.27344H24.75V4.77344H0.75V6.27344Z" fill="#FF0000"/>
+                    </svg>
+
+                </button>
+                
+            </div>
+         </div>`
+        ).join("")
+
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24,
+                },
+
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                },
+                1400: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+
+
+        const rowSeven = document.querySelector(".row-seven");
+
+        const CardTwo = [
+            {
+                img: "/assets/images/png/p7-card-1.png",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+            {
+                img: "/assets/images/png/p7-card-1.png",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+            {
+                img: "/assets/images/png/p7-card-1.png",
+                heading: "Lörem ipsum koda astrobel: sutaveligen. Rodod bänera viliga.",
+                text: "Learn more",
+            },
+        ];
+
+        rowSeven.innerHTML = CardTwo.map((items) =>
+            `
+            <div class="card max-w-[364px] p-6 rounded-3xl shadow-[0px_0px_12px_3px_#B6B6B640] cursor-pointer">
+                <img width="316" height="246" src="${items.img}">
+                <p class="font-semibold text-2xl mt-6 mb-4 leading-160">
+                    ${items.heading}
+                </p>
+                <div class="flex group gap-[10px] items-center">
+                    <p class="font-semibold text-red text-base leading-160">
+                      ${items.text}
+                    </p>
+                    <svg class="group-hover:translate-x-[10px] transition-all duration-600" width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M0.75 4.77344C0.335786 4.77344 0 5.10922 0 5.52344C0 5.93765 0.335786 6.27344 0.75 6.27344V4.77344ZM25.2803 6.05377C25.5732 5.76087 25.5732 5.286 25.2803 4.99311L20.5074 0.220137C20.2145 -0.0727568 19.7396 -0.0727568 19.4467 0.220137C19.1538 0.51303 19.1538 0.987904 19.4467 1.2808L23.6893 5.52344L19.4467 9.76608C19.1538 10.059 19.1538 10.5338 19.4467 10.8267C19.7396 11.1196 20.2145 11.1196 20.5074 10.8267L25.2803 6.05377ZM0.75 6.27344H24.75V4.77344H0.75V6.27344Z" fill="#FF0000"/>
+                    </svg>
+                </div>
+            </div>
+        
+        `).join("")
+
+
+        const faqQuestions = document.querySelectorAll(".faq-question");
+
+        faqQuestions.forEach((question) => {
+
+            question.addEventListener("click", () => {
+
+                const currentItem = question.closest(".faq-item");
+                const currentAnswer = currentItem.querySelector(".faq-answer");
+                const currentIcon = currentItem.querySelector(".faq-icon svg");
+
+                // Sabhi FAQ close karo
+                document.querySelectorAll(".faq-item").forEach((item) => {
+
+                    if (item !== currentItem) {
+
+                        const answer = item.querySelector(".faq-answer");
+                        const icon = item.querySelector(".faq-icon svg");
+
+                        answer.classList.remove(
+                            "max-h-[500px]",
+                            "opacity-100"
+                        );
+
+                        answer.classList.add(
+                            "max-h-0",
+                            "opacity-0"
+                        );
+
+                        if (icon) {
+                            icon.classList.remove("rotate-180");
+                        }
+                    }
+
+                });
+
+
+                // Current FAQ open / close
+
+                if (currentAnswer.classList.contains("max-h-0")) {
+
+                    // Open
+                    currentAnswer.classList.remove(
+                        "max-h-0",
+                        "opacity-0"
+                    );
+
+                    currentAnswer.classList.add(
+                        "max-h-[500px]",
+                        "opacity-100"
+                    );
+
+                    // Arrow rotate
+                    if (currentIcon) {
+                        currentIcon.classList.add("rotate-180");
+                    }
+
+                } else {
+
+                    // Close
+                    currentAnswer.classList.remove(
+                        "max-h-[500px]",
+                        "opacity-100"
+                    );
+
+                    currentAnswer.classList.add(
+                        "max-h-0",
+                        "opacity-0"
+                    );
+
+                    // Arrow normal
+                    if (currentIcon) {
+                        currentIcon.classList.remove("rotate-180");
+                    }
+
+                }
+
+            });
+
+        });
+
+
+        const rowAreas = document.querySelector(".row-areas")
+
+        const loactionData = [
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+            {
+                title: "Knoxville",
+            },
+        ];
+
+        rowAreas.innerHTML = loactionData.map((items) =>
+            `
+          <div class="location-box rounded-3xl w-full p-5 gap-3 flex shadow-[0px_2px_44px_3px_#5757571A] max-w-[364px] cursor-pointer">
+               <div class="w-12 h-12 rounded-full flex bg-red justify-center items-center">
+                   <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M21.875 8.375C20.5625 2.6 15.525 0 11.1 0C11.1 0 11.1 0 11.0875 0C6.67497 0 1.62497 2.5875 0.312473 8.3625C-1.15003 14.8125 2.79997 20.275 6.37497 23.7125C7.69997 24.9875 9.39997 25.625 11.1 25.625C12.8 25.625 14.5 24.9875 15.8125 23.7125C19.3875 20.275 23.3375 14.825 21.875 8.375ZM11.1 14.6375C8.92497 14.6375 7.16247 12.875 7.16247 10.7C7.16247 8.525 8.92497 6.7625 11.1 6.7625C13.275 6.7625 15.0375 8.525 15.0375 10.7C15.0375 12.875 13.275 14.6375 11.1 14.6375Z" fill="white"/>
+                   </svg>
+               </div>
+               <h2 class="font-semibold text-2xl leading-160">
+                      ${items.title}
+                </h2> 
+          </div>
+        `).join("")
+    </script>
+</body>
+
+</html>
